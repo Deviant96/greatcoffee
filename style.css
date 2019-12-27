@@ -1,0 +1,178 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html,body {
+    margin:0;
+    padding:0;
+}
+body{
+    font-size:16px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+address {
+    font-size:0.9em;
+}
+
+#home,#about,#menu,#contact {
+    margin:0;
+    padding:0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:#333;
+}
+
+nav ul li {
+    float:right;
+}
+
+nav ul li a {
+    display:block;
+    margin:0 auto;
+    padding:14px 16px;
+    color:white;
+    text-align:center;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color:#111;
+}
+
+.great-coffee {
+    color:white;
+}
+
+#home {
+    height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .9)), url('imgs/home-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    position:relative;
+}
+
+.container {
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%); /* IE 9 */
+    -webkit-transform: translate(-50%,-50%); /* Safari prior 9.0 */
+    text-align: center;
+}
+
+#home .container h1, #home .container p {
+    color:#ddd;
+}
+
+#home .container h1{
+    font-size:4em;
+}
+
+#about {
+    position: relative;
+    background-color:#ccc;
+    height: 100vh;
+}
+
+#about .about-cards {
+    height: 100%;
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .about-cards .card{
+    flex:1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: 10px;
+    min-height:170px;
+    text-align: center;
+    padding:16px;
+    background-color: #f7f5ec;
+    overflow: hidden;
+}
+
+#menu {
+    background-color:rgb(161, 124, 3);
+    height: 100vh;
+    position: relative;
+}
+
+#menu .column {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu .column .card{
+    flex:1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: 10px;
+    text-align: center;
+    padding:16px;
+    background-color: #f7f5ec;
+    overflow: hidden;
+}
+
+#contact {
+    background-color:rgb(241, 241, 241);
+    height: 100vh;
+    position: relative;
+}
+
+#contact .column {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .column .card{
+    flex:1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: 10px;
+    text-align: center;
+    padding:16px;
+    background-color: #f7f5ec;
+    overflow: hidden;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-top:50px;
+}
+
+.map {
+    padding:20px;
+}
+
+.numbers {
+    padding:20px;
+}
+
+footer {
+    text-align:center;
+    font-size:0.75em;
+    color:#333;
+}
